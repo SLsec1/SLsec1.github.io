@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="keywords" content="XYctf re wp, Hexo">
     <meta name="description" content="1.聪明的信使下载附件，用exeinfo打开附件
-![屏幕截图 2024-04-01 200847](..&amp;#x2F;images&amp;#x2F;屏幕截图 2024-04-01 200847.jpg)
-用ida打开附件，shift+f12显示所">
+![屏幕截图 2024-04-01 200847](XYctf re wp&amp;#x2F;屏幕截图 2024-04-01 200847.png)
+用ida打开附件，shift+f12显示所有字符">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -402,15 +402,15 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="1-聪明的信使"><a href="#1-聪明的信使" class="headerlink" title="1.聪明的信使"></a>1.聪明的信使</h1><p>下载附件，用exeinfo打开附件</p>
-<p>![屏幕截图 2024-04-01 200847](..&#x2F;images&#x2F;屏幕截图 2024-04-01 200847.jpg)</p>
+<p>![屏幕截图 2024-04-01 200847](XYctf re wp&#x2F;屏幕截图 2024-04-01 200847.png)</p>
 <p>用ida打开附件，shift+f12显示所有字符串，找到flag的线索</p>
-<p>![屏幕截图 2024-04-01 201014](..&#x2F;images&#x2F;屏幕截图 2024-04-01 201014.jpg)</p>
+<p>![屏幕截图 2024-04-01 201014](XYctf re wp&#x2F;屏幕截图 2024-04-01 201014.png)</p>
 <p>在显示的字符串里出现了很像flag的一串字符串，双击打开，ctrl+x点击确认，找到该字符串所在的位置，f5进行反汇编</p>
-<p>![屏幕截图 2024-04-01 201610](..&#x2F;images&#x2F;屏幕截图 2024-04-01 201610.jpg)</p>
-<p>函数encrypt将str1改变后应与oujp{H0d_TwXf_Lahyc0_14_e3ah_Rvy0ac@wc!}相等，将变换后的str1进行反向运算就能得到flag<br>![屏幕截图 2024-04-01 201749](..&#x2F;images&#x2F;屏幕截图 2024-04-01 201749.jpg)</p>
-<p>观察encrypt函数，用python编写解密函数<br>![屏幕截图 2024-04-01 201910](..&#x2F;images&#x2F;屏幕截图 2024-04-01 201910.jpg)</p>
+<p>![屏幕截图 2024-04-01 201610](XYctf re wp&#x2F;屏幕截图 2024-04-01 201610.png)</p>
+<p>函数encrypt将str1改变后应与oujp{H0d_TwXf_Lahyc0_14_e3ah_Rvy0ac@wc!}相等，将变换后的str1进行反向运算就能得到flag<br>![屏幕截图 2024-04-01 201749](XYctf re wp&#x2F;屏幕截图 2024-04-01 201749.png)</p>
+<p>观察encrypt函数，用python编写解密函数<br>![屏幕截图 2024-04-01 201910](XYctf re wp&#x2F;屏幕截图 2024-04-01 201910.png)</p>
 <p>运行后得到flag为“flag{Y0u_KnOw_Crypt0_14_v3ry_Imp0rt@nt!}”</p>
-<p>![屏幕截图 2024-04-01 202021](..&#x2F;images&#x2F;屏幕截图 2024-04-01 202021.jpg)</p>
+<p>![屏幕截图 2024-04-01 202021](XYctf re wp&#x2F;屏幕截图 2024-04-01 202021.png)</p>
 
                 
             </div>
